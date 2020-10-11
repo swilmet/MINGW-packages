@@ -3,7 +3,7 @@
 _realname=gedit-plugins
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}"
-pkgver=3.38.0
+pkgver=3.38.1
 pkgrel=1
 arch=('any')
 pkgdesc="Collection of plugins for the gedit Text Editor (mingw-w64)"
@@ -23,8 +23,8 @@ options=('strip' 'staticlibs')
 license=("GPL")
 url="https://wiki.gnome.org/Apps/Gedit/ShippedPlugins"
 install=gedit-plugins-${CARCH}.install
-source=(https://download.gnome.org/sources/${_realname}/${pkgver%.*}/${_realname}-${pkgver}.tar.xz)
-sha256sums=('bda2bd5ad7ebdd535d1cc6c8700c295dec64b227c9173c0d2bae0067516259fb')
+source=(${_realname}-${pkgver}.tar.xz)
+sha256sums=('fb3240dd5e6b1e81af70bfdaae35ba6ebf1239a391c5369a5f3eaefebc71d98a')
 
 prepare() {
   cd "${srcdir}"/${_realname}-${pkgver}
