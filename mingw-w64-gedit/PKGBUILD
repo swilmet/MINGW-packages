@@ -45,6 +45,7 @@ build() {
 
   ${MINGW_PREFIX}/bin/meson \
     --buildtype=plain \
+    -Dplugin_externaltools=false \
     "../${_realname}-${pkgver}"
 
   ninja
