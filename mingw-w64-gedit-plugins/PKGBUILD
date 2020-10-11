@@ -36,7 +36,11 @@ build() {
 
   ${MINGW_PREFIX}/bin/meson \
     --buildtype=plain \
+    -Dplugin_charmap=false \
     -Dplugin_findinfiles=false \
+    -Dplugin_synctex=false \
+    -Dplugin_terminal=false \
+    -Dplugin_translate=false \
     "../${_realname}-${pkgver}"
 
   ninja
