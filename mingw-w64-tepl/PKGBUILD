@@ -18,7 +18,7 @@ makedepends=("${MINGW_PACKAGE_PREFIX}-gcc"
 depends=("${MINGW_PACKAGE_PREFIX}-amtk"
          "${MINGW_PACKAGE_PREFIX}-gtksourceview4"
          "${MINGW_PACKAGE_PREFIX}-icu")
-source=("https://download.gnome.org/sources/${_realname}/${pkgver%.*}/${_realname}-${pkgver}.tar.xz")
+source=("${_realname}-${pkgver}.tar.xz")
 sha256sums=('b0cc4e82b4b5806bf781437a54c3e2355aca695091792ccfbf90648a456622ef')
 
 prepare() {
