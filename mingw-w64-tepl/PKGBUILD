@@ -3,7 +3,7 @@
 _realname=tepl
 pkgbase=mingw-w64-${_realname}
 pkgname="${MINGW_PACKAGE_PREFIX}-${_realname}5"
-pkgver=5.0.0
+pkgver=5.1.2
 pkgrel=1
 pkgdesc="Library that eases the development of GtkSourceView-based text editors and IDEs (mingw-w64)"
 arch=('any')
@@ -19,7 +19,7 @@ depends=("${MINGW_PACKAGE_PREFIX}-amtk"
          "${MINGW_PACKAGE_PREFIX}-gtksourceview4"
          "${MINGW_PACKAGE_PREFIX}-icu")
 source=("https://download.gnome.org/sources/${_realname}/${pkgver%.*}/${_realname}-${pkgver}.tar.xz")
-sha256sums=('c6bd2904f53048b7d0149236610b38f502f2634d395d8b9b3c659553f4045a74')
+sha256sums=('b0cc4e82b4b5806bf781437a54c3e2355aca695091792ccfbf90648a456622ef')
 
 prepare() {
   cd "${srcdir}"/${_realname}-${pkgver}
